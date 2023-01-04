@@ -1,0 +1,34 @@
+/* ===pages-tool===
+  该文件是pages-tool插件的配置文件
+  pages-tool插件可实现将pages.josn中的配置拆分到多个配置文件中，以便实现模块化配置。
+  在应用中配置项较多、页面较多时，分别在不同文件中进行配置，可使项目代码更为清晰。
+  在团队多人合作时，按模块分工，分别管理不同的配置文件,可避免同时修改pages.json带来的代码冲突问题。
+  
+  注意：启用该插件并设置了配置文件之后，pages.json配置文件中相关配置项的内容可能会被替换，应根据paes-config.json的设置情况决定哪些配置应该在pages.josn中设置,哪些应该在指定的文件中设置。
+  提示：插件只会处理已设置的相关项点，不会覆盖pages.json中未指定的项点。详见配置示例
+   
+*/
+
+{
+	"globalStyle" : "pages-config/globalStyle.json",
+	
+	"easycom" : "pages-config/easycom.json",
+	
+	"tabBar" : "pages-config/tabBar.json",
+	
+	"pages" : ["pages-config/pages-all.json"],
+	
+	"condition" : "",
+	
+	"subPackages" : [],
+	
+	"preloadRule" : "",
+	
+	"workers" : "",
+	
+	"leftWindow" : "",
+	
+	"topWindow" : "",
+	
+	"rightWindow" : ""
+}

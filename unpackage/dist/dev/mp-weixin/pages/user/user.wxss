@@ -1,0 +1,38 @@
+.user .top {
+  padding: 50rpx 0;
+  background: #F8F8F8;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user .top image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.user .top .text {
+  font-size: 38rpx;
+  padding-top: 20rpx;
+}
+.user .content {
+  padding: 30rpx;
+}
+.user .content .row {
+  border-bottom: 1px dotted #efefef;
+  padding: 20rpx 0;
+}
+.user .nohistory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user .nohistory image {
+  width: 450rpx;
+}
+.user .nohistory .text {
+  font-size: 26rpx;
+  color: #888;
+}
+

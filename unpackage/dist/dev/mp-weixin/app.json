@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/detail/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "青年新闻",
+    "navigationBarBackgroundColor": "#31c27c",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#31c27c",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home-h.png"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/user.png",
+        "selectedIconPath": "static/images/user-h.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

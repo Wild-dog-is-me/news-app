@@ -1,0 +1,21 @@
+/* /// Pages-Tool: 该文件是pages-tool插件的配置文件，根据pages-config.json的配置,本文件的内容可能合并到pages.json*/
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	    ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心
+                ",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ]
+}

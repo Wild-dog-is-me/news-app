@@ -1,0 +1,69 @@
+/* ===pages-tool===
+  该文件是pages-tool插件的配置文件模板，仅供参考。可以删除，不影响插件的使用。
+  pages-tool插件可实现将pages.josn中的配置拆分到多个配置文件中，以便实现模块化配置。
+  在应用中配置项较多、页面较多时，分别在不同文件中进行配置，可使项目代码更为清晰。
+  在团队多人合作时，按模块分工，分别管理不同的配置文件,可避免同时修改pages.json带来的代码冲突问题。
+  
+  注意：启用该插件并设置了配置文件之后，pages.json配置文件中相关配置项的内容可能会被替换，应根据paes-config.json的设置情况决定哪些配置应该在pages.josn中设置,哪些应该在指定的文件中设置。
+  提示：插件只会处理已设置的相关项点，不会覆盖pages.json中未指定的项点。详见配置示例
+   
+*/
+
+{
+	//可指定一个文件路径,从该文件读取globalStyle配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/globalStyle.json
+	//文件的格式同pages.json，但只应包含globalStyle配置项
+	"globalStyle" : "",
+	
+	//可指定一个文件路径,从该文件读取easycom配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/easycom.json
+	//文件的格式同pages.json，但只应包含easycom配置项
+	"easycom" : "",
+	
+	//可指定一个文件路径,从该文件读取tabBar配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/tabBar.json
+	//文件的格式同pages.json，但只应包含tabBar配置项
+	"tabBar" : "",
+	
+	//可指定多个文件路径,合并多个文件的内容作为pages配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置为：["pages-config/pages-moduleA.json", "pages-config/pages-moduleB.json", "pages-config/pages-moduleC.json", ...]
+	//每个文件的格式同pages.json，但只应包含pages配置项
+	"pages" : [],
+	
+	//可指定一个文件路径,从该文件读取condition配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/condition.json
+	//文件的格式同pages.json，但只应包含condition配置项
+	"condition" : "",
+	
+	//可对每个分包指定一个文件路径,从该文件读取对应分包的pages配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/subPackages-moduleNameA.json, pages-config/subPackages-moduleNameB.json, ...
+	//文件的格式同pages.json，但只应包含pages配置项
+	//配置格式例如：[{"root" : "pageA", "pages": "filePathA"}, {"root" : "pageB", "pages": "filePathB"}]
+	//需要注意两点：1.配置subPackages时应包含应用中的所有分包（不能只针对部分分包进行配置）；2.每个分包的pages只能对应一个文件，不能对应多个文件
+	"subPackages" : [],
+	
+	//可指定一个文件路径,从该文件读取preloadRule配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/preloadRule.json
+	//文件的格式同pages.json，但只应包含preloadRule配置项
+	"preloadRule" : "",
+	
+	//可指定一个文件路径,从该文件读取workers配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/workers.json
+	//文件的格式同pages.json，但只应包含workers配置项
+	"workers" : "",
+	
+	//可指定一个文件路径,从该文件读取leftWindow配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/leftWindow.json
+	//文件的格式同pages.json，但只应包含leftWindow配置项
+	"leftWindow" : "",
+	
+	//可指定一个文件路径,从该文件读取topWindow配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/topWindow.json
+	//文件的格式同pages.json，但只应包含topWindow配置项
+	"topWindow" : "",
+	
+	//可指定一个文件路径,从该文件读取rightWindow配置；如果不设置，仍然使用pages.json中的配置项
+	//推荐配置：pages-config/rightWindow.json
+	//文件的格式同pages.json，但只应包含rightWindow配置项
+	"rightWindow" : ""
+}
